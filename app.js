@@ -96,10 +96,10 @@ app.use((req, res, next) => {
   next();
 });
 
-/* --- Home Route --- */
-// app.get("/", (req, res) => {
-//   res.send("Hi, I am root");
-// });
+/* --- Redirect root to /listings --- */
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 /* --- LISTING_ROUTE (./routes/listing.js) --- */
 app.use("/listings", listingRouter);

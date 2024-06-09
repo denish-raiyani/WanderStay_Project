@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* --- navbar.ejs --- */
+.navbar {
+  height: 4.5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #ff385c !important;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.brand-name a {
+  color: #ff385c !important;
+  margin-left: -0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+.search-inp {
+  border: 1px solid lightgray !important;
+  border-radius: 25px 0px 0px 25px !important;
+  padding: 0.4rem 2rem 0.4rem 1.2rem !important;
+
+  &::placeholder {
+    font-size: 0.92rem !important;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-btn {
+  background-color: #ff385c !important;
+  color: #fff !important;
+  border-radius: 0px 25px 25px 0px !important;
+  padding: 0 0.5rem 0 0.7rem !important;
+
+  &:hover {
+    background-color: #ec1e44 !important;
+    color: #fff !important;
+  }
+
+  i {
+    display: inline !important;
+    margin-right: 0.5rem !important;
+  }
+}
+
+.new-listing {
+  margin-right: 1rem;
+}
+
+/* --- footer.ejs --- */
+.f-info {
+  text-align: center;
+  height: 6rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.f-info-socials {
+  width: 100%;
+
+  i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #000;
+  }
+}
+
+.f-info-links {
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: #222222;
+    cursor: default;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    font-size: 0.55rem;
+    color: #222222;
+  }
+}
+
+/* --- flash.ejs --- */
+.alert-message {
+  padding: 0.5rem 3rem 0.5rem 1rem !important;
+}
+
+.alert-button {
+  padding: 0.78rem 1rem !important;
+}
+
+/* --- index.ejs & show.ejs --- */
+/* Cards */
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text {
+  font-weight: 400 !important;
+}
+
+/* Card Effect - using nesting method for ":hover"  */
+.card-img-overlay {
+  opacity: 0;
+
+  &:hover {
+    opacity: 0.1;
+    background-color: white;
+  }
+}
+
+/* --- index.ejs --- */
+/* category */
+.categoryScroller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.3rem;
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  width: 72%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+
+  .filter {
+    text-align: center;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* show-tax */
+.tax-toggle {
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  height: 3rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tax-info {
+  display: none;
+  font-size: 0.85rem;
+}
+
+/* All-Listings */
+.listing-link {
+  text-decoration: none !important;
+}
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem !important;
+}
+
+.listing-img {
+  height: 20rem;
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+/* --- show.ejs --- */
+.show-card {
+  margin-bottom: 2rem !important;
+  padding-left: 0;
+  padding-right: 0;
+  border: none !important;
+}
+
+.show-img {
+  width: 100% !important;
+  height: 40vh !important;
+  border-radius: 1rem !important;
+  object-fit: cover !important;
+}
+
+.show-btns {
+  display: flex;
+}
+
+.show-btn {
+  background-color: #ff385c !important;
+  border: none !important;
+}
+
+/* map-mapbox */
+#map {
+  width: 34.4rem;
+  height: 22.5rem;
+  border-radius: 0.5rem;
+}
+
+/* --- new.ejs --- */
+.add-btn {
+  background-color: #ff385c !important;
+  border: none !important;
+}
+
+/* --- edit.ejs --- */
+.edit-btn {
+  background-color: #ff385c !important;
+  border: none !important;
+}
+
+/* ---- Media Query ---- */
+/* @media (width <= 768px) {
+  
+}
+
+@media (width > 768px) {
+
+} */

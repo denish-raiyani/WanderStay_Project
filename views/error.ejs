@@ -1,0 +1,9 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="row mt-4">
+  <div class="alert alert-danger col-6 offset-3 text-center" role="alert">
+    <h1 class="fw-bold" style="font-size: 4rem"><%= err.statusCode %></h1>
+    <h5 class="fw-light"><%= err.message %></h5>
+    <a href="/listings" class="btn btn-outline-secondary btn-sm mt-2">Explore Listings</a>
+  </div>
+</div>

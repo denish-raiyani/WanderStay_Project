@@ -1,6 +1,6 @@
 # **WanderStay**
 
-    WanderStay is a project inspired by the Airbnb platform, this is an online marketplace that connects individuals seeking residence with hosts willing to rent out their homes. The project is built using MongoDB, Express.js, and Node.js.
+WanderStay is a project inspired by the Airbnb platform, this is an online marketplace that connects individuals seeking residence with hosts willing to rent out their homes. The project is built using MongoDB, Express.js, and Node.js.
 
 ## Technologies & Packages Used
 

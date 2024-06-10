@@ -26,7 +26,13 @@
       <!-- description -->
       <div class="mb-3">
         <label for="description" class="form-label">Description</label>
-        <textarea name="listing[description]" id="description" class="form-control" required>
+        <textarea
+          name="listing[description]"
+          id="description"
+          rows="4"
+          class="form-control"
+          required
+        >
 <%= listing.description %></textarea
         >
         <div class="invalid-feedback">Please enter a short description.</div>
@@ -35,7 +41,7 @@
       <!-- show image preview -->
       <div class="mb-3">
         Original Listing Image <br />
-        <img src="<%= originalImageUrl %>" alt="listing_image" />
+        <img src="<%= originalImageUrl %>" alt="listing_image" class="img-preview" />
       </div>
 
       <!-- image -->
@@ -86,7 +92,7 @@
         <div class="invalid-feedback">Location should be valid.</div>
       </div>
 
-      <button class="btn btn-dark mb-4 d-grid col-md-3 mx-auto edit-btn">Edit</button>
+      <button class="btn btn-dark mb-4 d-grid col-md-3 mx-auto edit-btn">Submit</button>
     </form>
   </div>
 </div>

@@ -45,7 +45,7 @@ module.exports.createListing = async (req, res, next) => {
   // MapBox - Get coordinates in GeoJSON format
   let response = await geocodingClient
     .forwardGeocode({
-      query: req.body.listing.location,
+      query: `${req.body.listing.location}, ${req.body.listing.country}`,
       limit: 1,
     })
     .send();

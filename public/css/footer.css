@@ -1,0 +1,42 @@
+/* --- footer.ejs --- */
+
+.f-info {
+  text-align: center;
+  height: 6rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.f-info-socials {
+  margin-top: 0.2rem;
+  width: 100%;
+
+  i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #000;
+  }
+}
+
+.f-info-links {
+  width: 100%;
+  margin-bottom: 0.2rem;
+
+  a {
+    text-decoration: none;
+    color: #222222;
+    cursor: default;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    font-size: 0.55rem;
+    color: #222222;
+  }
+}

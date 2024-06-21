@@ -1,31 +1,25 @@
+<link rel="stylesheet" href="/css/flash.css" />
+
 <!-- flash Success message -->
 <% if (success && success.length) { %>
 <div
-  class="alert alert-success alert-dismissible fade show col-6 offset-3 alert-message"
+  id="alert-message"
+  class="alert alert-success alert-dismissible fade show col-6 offset-3"
   role="alert"
 >
   <%= success %>
-  <button
-    type="button"
-    class="btn-close alert-button"
-    data-bs-dismiss="alert"
-    aria-label="Close"
-  ></button>
 </div>
 <% } %>
 
 <!-- flash Error message -->
 <% if (error && error.length) { %>
 <div
-  class="alert alert-danger alert-dismissible fade show col-6 offset-3 alert-message"
+  id="alert-message"
+  class="alert alert-danger alert-dismissible fade show col-6 offset-3"
   role="alert"
 >
   <%= error %>
-  <button
-    type="button"
-    class="btn-close alert-button"
-    data-bs-dismiss="alert"
-    aria-label="Close"
-  ></button>
 </div>
 <% } %>
+
+<script src="/js/flash.js"></script>

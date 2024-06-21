@@ -15,14 +15,7 @@ body {
 
 /* footer styles moved into footer.css */
 
-/* --- flash.ejs --- */
-.alert-message {
-  padding: 0.5rem 3rem 0.5rem 1rem !important;
-}
-
-.alert-button {
-  padding: 0.78rem 1rem !important;
-}
+/* flash styles moved into flash.css */
 
 /* --- index.ejs & show.ejs --- */
 /* Cards */

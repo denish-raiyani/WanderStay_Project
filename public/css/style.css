@@ -41,11 +41,7 @@ body {
 
 /* show page styles moved into listing-show.css */
 
-/* --- new.ejs --- */
-.add-btn {
-  background-color: #ff385c !important;
-  border: none !important;
-}
+/* new page styles moved into listing-new.css */
 
 /* --- edit.ejs --- */
 .img-preview {

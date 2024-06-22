@@ -9,9 +9,10 @@
 }
 
 #filters {
+  margin-right: 1rem;
   display: flex;
   flex-wrap: wrap;
-  width: 72%;
+  width: 71%;
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
@@ -61,4 +62,117 @@
   border-radius: 1rem !important;
   width: 100% !important;
   object-fit: cover !important;
+}
+
+/* ---- Media Query ---- */
+@media (width <= 995px) {
+  .categoryScroller {
+    margin: 0.1rem;
+  }
+
+  #filters {
+    width: 73%;
+    margin-right: 0;
+
+    .filter {
+      font-size: 0.8rem;
+
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .tax-toggle {
+    margin-left: 0.5rem !important;
+    padding: 0 0.8rem;
+    border-radius: 0.6rem;
+    height: 2.3rem;
+
+    .tax-switch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      label {
+        font-size: 0.6rem;
+      }
+
+      input {
+        font-size: 0.7rem;
+        margin: 0 -2.5rem 0 0.5rem !important;
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .categoryScroller {
+    flex-direction: column;
+    margin: 0rem;
+  }
+
+  #filters {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .tax-toggle {
+    margin-bottom: 0.6rem !important;
+    padding: 0 1.5rem;
+    border-radius: 0.5rem;
+    height: 2.4rem;
+
+    .tax-switch {
+      label {
+        font-size: 0.85rem;
+      }
+
+      input {
+        font-size: 0.85rem;
+        margin: 0 -2.5rem 0 0.7rem !important;
+      }
+    }
+  }
+}
+
+@media (width < 431px) {
+  .categoryScroller #filters {
+    display: grid;
+    grid-template-columns: repeat(5, 65px);
+    grid-gap: 6px;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: baseline;
+
+    .filter {
+      font-size: 0.9rem;
+
+      p {
+        font-size: 0.7rem;
+        margin-bottom: 0.6rem !important;
+      }
+    }
+  }
+
+  .tax-toggle {
+    margin-top: 0.3rem;
+    margin-bottom: 0.7rem !important;
+    padding: 0 1.8rem;
+    border-radius: 0.8rem;
+    height: 2.6rem;
+
+    .tax-switch {
+      label {
+        font-size: 0.9rem;
+      }
+
+      input {
+        font-size: 0.9rem;
+        margin: 0 -2.5rem 0 0.7rem !important;
+      }
+    }
+  }
 }

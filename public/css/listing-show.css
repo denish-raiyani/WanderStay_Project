@@ -1,0 +1,31 @@
+/* --- show.ejs --- */
+
+.show-card {
+  margin-bottom: 2rem !important;
+  padding-left: 0;
+  padding-right: 0;
+  border: none !important;
+}
+
+.show-img {
+  width: 100% !important;
+  height: 40vh !important;
+  border-radius: 1rem !important;
+  object-fit: cover !important;
+}
+
+.show-btns {
+  display: flex;
+}
+
+.show-btn {
+  background-color: #ff385c !important;
+  border: none !important;
+}
+
+/* map-mapbox */
+#map {
+  width: 34.4rem;
+  height: 22.5rem;
+  border-radius: 0.5rem;
+}

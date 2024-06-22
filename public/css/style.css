@@ -11,12 +11,6 @@ body {
   flex: 1;
 }
 
-/* navbar styles moved into navbar.css */
-
-/* footer styles moved into footer.css */
-
-/* flash styles moved into flash.css */
-
 /* --- index.ejs & show.ejs --- */
 /* Cards */
 .card-body {
@@ -36,14 +30,6 @@ body {
     background-color: white;
   }
 }
-
-/* index page styles moved into listing-index.css */
-
-/* show page styles moved into listing-show.css */
-
-/* new page styles moved into listing-new.css */
-
-/* edit page styles moved into listing-edit.css */
 
 /* ---- Media Query ---- */
 /* @media (width <= 768px) {

@@ -43,17 +43,7 @@ body {
 
 /* new page styles moved into listing-new.css */
 
-/* --- edit.ejs --- */
-.img-preview {
-  width: 10rem !important;
-  height: 10rem !important;
-  border-radius: 0.5rem;
-}
-
-.edit-btn {
-  background-color: #ff385c !important;
-  border: none !important;
-}
+/* edit page styles moved into listing-edit.css */
 
 /* ---- Media Query ---- */
 /* @media (width <= 768px) {

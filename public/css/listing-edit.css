@@ -1,0 +1,12 @@
+/* --- edit.ejs --- */
+
+.img-preview {
+  width: 10rem !important;
+  height: 10rem !important;
+  border-radius: 0.5rem;
+}
+
+.edit-btn {
+  background-color: #ff385c !important;
+  border: none !important;
+}

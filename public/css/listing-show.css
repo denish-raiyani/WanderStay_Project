@@ -5,27 +5,114 @@
   padding-left: 0;
   padding-right: 0;
   border: none !important;
-}
 
-.show-img {
-  width: 100% !important;
-  height: 40vh !important;
-  border-radius: 1rem !important;
-  object-fit: cover !important;
+  .show-img {
+    width: 100% !important;
+    height: 40vh !important;
+    border-radius: 1rem !important;
+    object-fit: cover !important;
+  }
+
+  .show-card-text {
+    margin-top: 0.2rem;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
 }
 
 .show-btns {
   display: flex;
 }
 
-.show-btn {
+.show-edit-btn {
   background-color: #ff385c !important;
   border: none !important;
 }
 
 /* map-mapbox */
 #map {
-  width: 34.4rem;
-  height: 22.5rem;
-  border-radius: 0.5rem;
+  width: 100% !important;
+  height: 43vh !important;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ---- Media Query ---- */
+@media (1400px <= width) {
+  .show-title {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .show-edit-btn,
+  .show-delete-btn {
+    padding: 0.5rem 1.5rem !important;
+  }
+}
+
+@media (width < 1400px) {
+  .show-title {
+    margin-top: 0.7rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .show-edit-btn,
+  .show-delete-btn {
+    padding: 0.5rem 1.4rem !important;
+  }
+}
+
+@media (width < 1200px) {
+  .show-title {
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .show-edit-btn,
+  .show-delete-btn {
+    padding: 0.4rem 1.2rem !important;
+  }
+}
+
+@media (width < 992px) {
+  .show-title {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .show-edit-btn,
+  .show-delete-btn {
+    padding: 0.3rem 1.1rem !important;
+  }
+}
+
+@media (width < 768px) {
+  .show-title {
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  .show-edit-btn,
+  .show-delete-btn {
+    margin-top: -0.5rem;
+    padding: 0.3rem 0.9rem !important;
+  }
+}
+
+@media (width < 576px) {
+  .show-title {
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.25rem !important;
+
+    h3 {
+      font-size: 1.3rem !important;
+    }
+  }
+
+  .show-edit-btn,
+  .show-delete-btn {
+    margin-top: -0.5rem;
+    padding: 0.3rem 0.8rem !important;
+  }
 }

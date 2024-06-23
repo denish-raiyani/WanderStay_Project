@@ -10,13 +10,17 @@
 
 <div class="row my-2">
   <!-- Listing -->
-  <div class="col-6 offset-3 mb-1">
+  <div
+    class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1 mb-1 show-title"
+  >
     <h3><%= listing.title %></h3>
   </div>
 
-  <div class="card col-6 offset-3 show-card">
+  <div
+    class="card col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1 show-card"
+  >
     <img src="<%= listing.image.url %>" class="card-img-top show-img" alt="listing_image" />
-    <div class="card-body pt-2">
+    <div class="card-body pt-2 show-card-text">
       <p class="card-text"><i>Owned by <%= listing.owner.username %></i></p>
       <p class="card-text"><%= listing.description %></p>
       <p class="card-text">&#8377; <%= listing.price.toLocaleString("en-IN") %></p>
@@ -26,17 +30,21 @@
 
   <!-- hiding the edit/delete button for users who have not created the listing -->
   <% if (currentUser && currentUser._id.equals(listing.owner._id)) { %>
-  <div class="show-btns col-6 offset-3 mb-1">
-    <a href="/listings/<%= listing._id %>/edit" class="btn btn-dark show-btn">Edit</a>
+  <div
+    class="show-btns col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1 mb-1"
+  >
+    <a href="/listings/<%= listing._id %>/edit" class="btn btn-dark show-edit-btn">Edit</a>
 
     <form action="/listings/<%= listing._id %>?_method=DELETE" method="POST">
-      <button class="btn btn-dark offset-5">Delete</button>
+      <button class="btn btn-dark show-delete-btn offset-5">Delete</button>
     </form>
   </div>
   <% } %>
 
   <!-- REVIEWS form -->
-  <div class="col-6 offset-3 mb-3">
+  <div
+    class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1 mb-3"
+  >
     <!-- hiding the review form when users are not logged-in -->
     <% if (currentUser) { %>
     <hr />
@@ -49,7 +57,7 @@
       novalidate
     >
       <!-- add Starability.css -->
-      <div class="my-3">
+      <div class="my-3 mb-sm-1">
         <label for="rating" class="form-label">Rating:</label>
         <fieldset class="starability-slot">
           <input
@@ -74,7 +82,7 @@
         </fieldset>
       </div>
 
-      <div class="my-3">
+      <div class="mt-1 mb-3">
         <label for="comment" class="form-label">Comments:</label>
         <textarea
           name="review[comment]"
@@ -85,7 +93,7 @@
         ></textarea>
         <div class="invalid-feedback">Please enter a some comments for review.</div>
       </div>
-      <button class="btn btn-outline-dark">Submit</button>
+      <button class="btn btn-outline-dark mb-1">Submit</button>
     </form>
     <% } %>
 
@@ -98,7 +106,7 @@
 
     <div class="row">
       <% for (let review of listing.reviews) { %>
-      <div class="card col-5 ms-3 mb-3">
+      <div class="card col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-11 col-11 ms-3 mb-2 py-1">
         <div class="card-body">
           <h5 class="card-title">@<%= review.author.username %></h5>
           <p class="starability-result" data-rating="<%= review.rating %>"></p>
@@ -117,12 +125,14 @@
       </div>
       <% } %>
     </div>
-    <hr />
+    <hr class="mb-1" />
     <% } %>
   </div>
 
   <!-- MAP - mapbox -->
-  <div class="col-6 offset-3 mb-3">
+  <div
+    class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1 mb-3"
+  >
     <h4>Where you&apos;ll be</h4>
     <div id="map"></div>
   </div>

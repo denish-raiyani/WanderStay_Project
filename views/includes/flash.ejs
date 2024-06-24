@@ -3,22 +3,22 @@
 <!-- flash Success message -->
 <% if (success && success.length) { %>
 <div
-  id="alert-message"
-  class="alert alert-success alert-dismissible fade show col-6 offset-3"
-  role="alert"
+  class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-6 offset-md-3 px-4"
 >
-  <%= success %>
+  <div id="alert-message" class="alert alert-success alert-dismissible fade show" role="alert">
+    <%= success %>
+  </div>
 </div>
 <% } %>
 
 <!-- flash Error message -->
 <% if (error && error.length) { %>
 <div
-  id="alert-message"
-  class="alert alert-danger alert-dismissible fade show col-6 offset-3"
-  role="alert"
+  class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-6 offset-md-3 px-4"
 >
-  <%= error %>
+  <div id="alert-message" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <%= error %>
+  </div>
 </div>
 <% } %>
 

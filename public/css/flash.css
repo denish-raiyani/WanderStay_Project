@@ -2,6 +2,6 @@
 
 #alert-message {
   text-align: center;
-  padding: 0.5rem 3rem 0.5rem 1rem !important;
+  padding: 0.5rem 1rem 0.5rem 1rem !important;
   z-index: 1001;
 }

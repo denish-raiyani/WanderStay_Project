@@ -3,8 +3,8 @@
 <link rel="stylesheet" href="/css/listing-edit.css" />
 
 <div class="row">
-  <div class="col-8 offset-2">
-    <h3 class="mt-3 mb-2 text-center">Edit your Listing</h3>
+  <div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 px-4">
+    <h3 class="mt-3 mb-3 text-center">Edit your Listing</h3>
     <form
       action="/listings/<%= listing._id %>?_method=PUT"
       method="POST"
@@ -42,7 +42,7 @@
 
       <!-- show image preview -->
       <div class="mb-3">
-        Original Listing Image <br />
+        <div class="mb-1">Original Listing Image</div>
         <img src="<%= originalImageUrl %>" alt="listing_image" class="img-preview" />
       </div>
 

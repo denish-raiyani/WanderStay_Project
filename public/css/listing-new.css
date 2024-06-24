@@ -3,4 +3,12 @@
 .add-btn {
   background-color: #ff385c !important;
   border: none !important;
+  padding: 0.3rem 2rem;
+}
+
+/* ---- Media Query ---- */
+@media (width < 576px) {
+  .new-body {
+    padding: 0 1.5rem;
+  }
 }

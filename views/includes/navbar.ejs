@@ -11,38 +11,40 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
       <!-- <div class="navbar-nav">
         <a class="nav-link" href="/">Home</a>
       </div> -->
 
-      <!-- Search -->
-      <div class="navbar-nav ms-auto">
-        <form class="d-flex" role="search">
-          <input class="search-inp" type="text" placeholder="Search destinations" />
-          <button class="btn search-btn" type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-      </div>
+      <div class="offcanvas-body">
+        <!-- Search -->
+        <div class="navbar-nav ms-auto">
+          <form class="d-flex" role="search">
+            <input class="search-inp" type="text" placeholder="Search destinations" />
+            <button class="btn search-btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
 
-      <div class="navbar-nav ms-auto">
-        <!-- Create New Listing -->
-        <a class="nav-link new-listing" href="/listings/new">Add your home</a>
+        <div class="navbar-nav ms-auto navbar-link">
+          <!-- Create New Listing -->
+          <a class="nav-link new-listing" href="/listings/new">Add your home</a>
 
-        <!-- Authentication -->
-        <% if (!currentUser) { %>
-        <a class="nav-link" href="/signup"><b>Sign up</b></a>
-        <a class="nav-link" href="/login"><b>Log in</b></a>
-        <% } %> <% if (currentUser) { %>
-        <a class="nav-link" href="/logout"><b>Log out</b></a>
-        <% } %>
+          <!-- Authentication -->
+          <% if (!currentUser) { %>
+          <a class="nav-link" href="/signup"><b>Sign up</b></a>
+          <a class="nav-link" href="/login"><b>Log in</b></a>
+          <% } %> <% if (currentUser) { %>
+          <a class="nav-link" href="/logout"><b>Log out</b></a>
+          <% } %>
+        </div>
       </div>
     </div>
   </div>

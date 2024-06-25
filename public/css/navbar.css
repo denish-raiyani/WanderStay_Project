@@ -54,3 +54,33 @@
 .new-listing {
   margin-right: 1rem;
 }
+
+/* ---- Media Query ---- */
+@media (width < 768px) {
+  .offcanvas-end {
+    width: 85% !important;
+    padding-top: 2rem;
+
+    .offcanvas-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .navbar-link {
+        margin-top: 1rem;
+        margin-right: 1rem;
+        align-items: end;
+
+        .new-listing {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (width < 350px) {
+  .offcanvas-end {
+    width: 90% !important;
+  }
+}

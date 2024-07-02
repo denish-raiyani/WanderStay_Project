@@ -23,3 +23,18 @@
     );
   });
 })();
+
+/* --- password visibility ---*/
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#password");
+
+togglePassword.addEventListener("click", () => {
+  const type = password.getAttribute("type");
+  if (type === "password") {
+    password.setAttribute("type", "text");
+    togglePassword.classList.add("fa-eye");
+  } else {
+    password.setAttribute("type", "password");
+    togglePassword.classList.remove("fa-eye");
+  }
+});

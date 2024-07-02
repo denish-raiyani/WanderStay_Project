@@ -31,11 +31,18 @@ body {
   }
 }
 
-/* ---- Media Query ---- */
-/* @media (width <= 768px) {
-  
+/* --- login.ejs & signup.ejs */
+.form-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  input {
+    border: none;
+  }
+
+  i {
+    padding: 0 0.7rem 0 0.8rem;
+  }
 }
-
-@media (width > 768px) {
-
-} */
